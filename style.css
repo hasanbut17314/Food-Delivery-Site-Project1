@@ -1,0 +1,905 @@
+* {
+
+    margin: 0;
+    padding: 0;
+}
+
+input {
+    outline: none;
+}
+
+body {
+    font-family: 'REM', sans-serif;
+}
+
+.container1 {
+    margin-top: 0;
+    padding: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(47, 46, 46, 0.746)), url(/bg1.jpg) no-repeat center center/cover;
+    z-index: -1;
+    animation-name: animate1;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transition: all 0.3s ease;
+    height: 550px;
+}
+
+@keyframes animate1 {
+    0% {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(47, 46, 46, 0.746)), url(/bg1.jpg) no-repeat center center/cover;
+    }
+
+    25% {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(47, 46, 46, 0.746)), url(/bg2.jpg) no-repeat center center/cover;
+    }
+
+    50% {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(47, 46, 46, 0.746)), url(/bg3.jpg) no-repeat center center/cover;
+    }
+
+    75% {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(47, 46, 46, 0.746)), url(/bg4.jpg) no-repeat center center/cover;
+    }
+
+    100% {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(47, 46, 46, 0.746)), url(/bg3.jpg) no-repeat center center/cover;
+    }
+}
+
+
+.navigation75 {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    background-color: rgba(31, 31, 31, 0.9);
+    max-width: 950px;
+    height: 70px;
+    position: relative;
+    top: 40px;
+    margin: auto;
+    font-family: 'Noto Serif Vithkuqi', serif;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 0%;
+    background-color: #0096FF;
+    transition: all 0.3s ease;
+    z-index: 2;
+}
+
+.logo img {
+    height: 60px;
+    width: 70px;
+    margin-left: 3px;
+    margin-top: 6px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.item1 {
+    display: flex;
+    flex-direction: row;
+    margin-right: 190px;
+}
+
+.item1 li {
+    margin: 10px;
+    list-style: none;
+    margin-top: 22px;
+}
+
+.item1 li a {
+    font-size: 1.1em;
+    text-decoration: none;
+    color: white;
+}
+
+.item1 li a:hover {
+    color: orangered;
+}
+
+.login {
+    margin: 12px;
+    margin-top: 17px;
+}
+
+.login .loginbtn {
+    font-size: 1.1em;
+    border: 0px solid black;
+    border-radius: 4px;
+    height: 30px;
+    width: 80px;
+    letter-spacing: 1.2px;
+    padding: 2px;
+    margin-right: 3px;
+    cursor: pointer;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.login .loginbtn:hover {
+    background-color: lightgray;
+}
+
+.login .registerbtn {
+    font-size: 1em;
+    border: 0px solid black;
+    border-radius: 4px;
+    height: 31.2px;
+    width: 80px;
+    letter-spacing: 1.2px;
+    padding: 2px;
+    color: white;
+    background-color: rgb(209, 69, 19);
+    cursor: pointer;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+}
+
+.login .registerbtn:hover {
+    background-color: rgb(255, 81, 18);
+}
+
+.heading {
+    text-align: center;
+    margin-top: 100px;
+    color: white;
+    text-shadow: 4px 4px 5px black;
+}
+
+.heading h1 {
+    margin-bottom: 18px;
+    letter-spacing: 2px;
+    font-size: 2.6em;
+}
+
+.heading p {
+    font-size: 1.1em;
+    margin-top: 10px;
+}
+
+.alpha {
+    transition: all 0.4s ease;
+}
+
+.alpha h1 {
+    color: orangered;
+    font-size: 2.7em;
+    margin-top: 25px;
+    text-align: center;
+    text-shadow: 1.2px 1.2px 4px lightslategray;
+    font-family: 'Noto Serif Vithkuqi', serif;
+}
+
+.mainpg {
+    transition: all 0.4s ease;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 13px;
+    margin-top: 40px;
+}
+
+.img1 {
+    border: 1px solid white;
+    background-color: bisque;
+    text-align: center;
+    min-height: 285px;
+    margin-left: 11px;
+}
+
+.img1 img {
+    margin-top: 5px;
+    height: 90px;
+}
+
+.img1 figcaption {
+    margin-top: 25px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.img2 {
+    border: 1px solid white;
+    background-color: bisque;
+    text-align: center;
+    min-height: 285px;
+}
+
+.img2 figcaption {
+    margin-bottom: 4px;
+    font-weight: bold;
+}
+
+.img3 {
+    border: 1px solid white;
+    background-color: bisque;
+    text-align: center;
+    min-height: 285px;
+    margin-right: 11px;
+}
+
+.img3 img {
+    height: 94px;
+    margin-top: 4px;
+}
+
+.img3 figcaption {
+    margin-top: 14px;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+.giga {
+    margin-top: 150px;
+    font-family: 'Noto Serif Vithkuqi', serif;
+}
+
+.giga h1 {
+    color: orangered;
+    font-size: 2.7em;
+    margin-top: 25px;
+    text-align: center;
+    text-shadow: 1.2px 1.2px 4px lightslategray;
+    letter-spacing: 2px;
+
+}
+
+.pic1 {
+    border: solid transparent;
+    background-color: bisque;
+    min-height: 250px;
+    grid-area: sigma1;
+    width: auto;
+}
+
+.pic2 {
+    border: solid transparent;
+    background-color: bisque;
+    min-height: 250px;
+    grid-area: sigma2;
+    width: auto;
+}
+
+.pic3 {
+    border: solid transparent;
+    background-color: bisque;
+    min-height: 250px;
+    grid-area: sigma3;
+    width: auto;
+}
+
+.pic4 {
+    border: solid transparent;
+    background-color: bisque;
+    min-height: 250px;
+    grid-area: sigma4;
+    width: auto;
+}
+
+.pic5 {
+    border: solid transparent;
+    background-color: bisque;
+    min-height: 250px;
+    grid-area: sigma5;
+    width: auto;
+}
+
+.pic6 {
+    border: solid transparent;
+    background-color: bisque;
+    min-height: 250px;
+    grid-area: sigma6;
+    width: auto;
+}
+
+.mainpg2 {
+    text-align: center;
+}
+
+.container-fluid img {
+    height: 150px;
+}
+
+.container-fluid h3 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-top: 4px;
+}
+
+.container-fluid h4 {
+    margin-top: 8px;
+    font-size: 1.1rem;
+}
+
+.order {
+    padding: 0;
+    padding-top: 82px;
+    border: 1px solid transparent;
+    color: #ffff;
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(47, 46, 46, 0.743)), url('bg5.jpg');
+    background-position: center;
+    background-size: cover;
+    margin-top: 50px;
+    height: 300px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.order button {
+    border: 1px solid transparent;
+    border-radius: 18px;
+    padding: 6px;
+    color: white;
+    background-color: rgb(209, 69, 19);
+    ;
+    height: 42px;
+    width: 122px;
+    font-size: 0.9em;
+    letter-spacing: 1.2px;
+    cursor: pointer;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    margin-top: 24px;
+}
+
+.order button:hover {
+    background-color: orangered;
+}
+
+.order h1 {
+    font-size: 1.666em;
+    margin-bottom: 10;
+    display: inline-block;
+}
+
+.order h3 {
+    font-size: 1.4444em;
+    display: inline-block;
+}
+
+.mainpg3 {
+    margin-top: 60px;
+    display: grid;
+    grid-template-areas: "reserveg .. booktableg";
+}
+
+.reserve {
+    grid-area: reserveg;
+    margin-left: 20px;
+}
+
+.reserve h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgb(3, 3, 30);
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    margin-bottom: 18px;
+    font-size: 1.9em;
+}
+
+.booktable {
+    grid-area: booktableg;
+    padding: 0;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    color: #ffff;
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(47, 46, 46, 0.743)), url('booktable.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 390px;
+    margin-top: 40px;
+    margin-right: 40px;
+}
+
+.booktable h4 {
+    margin-top: 25px;
+    margin-bottom: 18px;
+    letter-spacing: 1.2px;
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+.booktable input {
+    height: 23px;
+    width: 280px;
+    padding: 3px;
+    margin: 4px;
+    margin-bottom: 8px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+
+.booktable i {
+    position: relative;
+    right: 30px;
+    color: rgb(114, 109, 109);
+}
+
+.booktable button {
+    border: 1px solid transparent;
+    border-radius: 18px;
+    padding: 6px;
+    color: white;
+    background-color: rgb(209, 69, 19);
+    height: 42px;
+    width: 162px;
+    font-size: 0.9em;
+    letter-spacing: 1.2px;
+    cursor: pointer;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.booktable button:hover {
+    background-color: orangered;
+}
+
+.followus {
+    grid-area: followus1;
+    margin-left: 20px;
+}
+
+.followus img {
+    height: 180px;
+    width: 190px;
+    margin-top: 18px;
+    margin-left: 12px;
+    box-shadow: 0 0 5px rgb(72, 72, 72);
+    border-radius: 50%;
+    background-color: black;
+}
+
+.followus h4 {
+    margin-top: 10px;
+    margin-left: 11px;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-shadow: 0 0 4px #f0f0f0;
+    font-family: "Merriweather", sans;
+    letter-spacing: 2px;
+}
+
+.followus i {
+    color: white;
+    margin: 20px;
+    padding: 3px;
+    border: 1px solid transparent;
+    background-color: rgb(209, 69, 19);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.followus i:hover {
+    background-color: orangered;
+}
+
+.followus input {
+    margin-left: 13px;
+    padding: 7px 9px;
+    height: 40px;
+    width: 220px;
+    border: 1px solid black;
+    border-radius: 20px;
+    font-size: 1.1em;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    outline: none;
+}
+
+.followus a {
+    padding: 5.5px;
+    height: 25px;
+    width: 55px;
+    border: 1px solid black;
+    background-color: rgb(209, 69, 19);
+    border-radius: 20px;
+    position: relative;
+    right: 64px;
+    bottom: 0.4px;
+}
+
+.followus a:hover {
+    background-color: orangered;
+}
+
+.followus a i {
+    width: 15px;
+}
+
+.cate {
+    grid-area: cate1;
+    margin-top: 45px;
+    text-align: center;
+}
+
+.cate h4 {
+    font-size: 1.5em;
+    margin-bottom: 11px;
+    letter-spacing: 1px;
+}
+
+.cate ul li {
+    list-style: none;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.cate ul li:hover {
+    color: orangered;
+}
+
+.quick {
+    grid-area: quick1;
+    margin-top: 37px;
+    margin-top: 45px;
+    text-align: center;
+}
+
+.quick h4 {
+    font-size: 1.5em;
+    margin-bottom: 11px;
+    letter-spacing: 1px;
+}
+
+.quick ul li {
+    list-style: none;
+    margin-bottom: 10px;
+    color: rgb(209, 69, 19);
+    cursor: pointer;
+}
+
+.quick ul li:hover {
+    color: orangered;
+}
+
+.lastgrid {
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    background-color: bisque;
+    margin-top: 90px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "followus1 followus1 cate1 quick1";
+    box-shadow: 0 -3px 8px rgb(119, 123, 126);
+}
+
+.copy {
+    text-align: center;
+    background-color: bisque;
+    height: 38px;
+}
+
+.copy p {
+    margin-top: 5px;
+    margin-bottom: 8px;
+}
+
+hr {
+    margin: 0;
+}
+
+
+@media screen and (max-width: 850px) {
+    .login {
+        margin: 9px;
+        margin-top: 17px;
+    }
+
+    .login .loginbtn {
+        font-size: 1em;
+        border: 0px solid black;
+        border-radius: 4px;
+        height: 27px;
+        width: 69px;
+        letter-spacing: 1.1px;
+        padding: 2px;
+        margin-right: 3px;
+        cursor: pointer;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+
+    .login .registerbtn {
+        font-size: 1em;
+        border: 0px solid black;
+        border-radius: 4px;
+        height: 28px;
+        width: 69px;
+        letter-spacing: 1px;
+        padding: 2px;
+        color: white;
+        background-color: rgb(209, 69, 19);
+        cursor: pointer;
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: bold;
+    }
+
+    .item1 {
+        margin-right: 123px;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .item1 {
+        display: none;
+    }
+
+    .login {
+        display: none;
+    }
+
+    .navigation75 {
+        height: auto;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        border-radius: 0%;
+        background-color: rgb(31, 31, 31);
+        z-index: 1;
+    }
+
+    .sticky {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        max-width: 100%;
+        border-radius: 0%;
+        background-color: rgb(31, 31, 31);
+        transition: all 0.3s ease;
+        z-index: 1;
+    }
+
+    .heading {
+        margin-top: 70px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+    }
+
+    .heading h1 {
+        margin-top: 67px;
+    }
+
+    .bars {
+        padding-top: 12px;
+        font-size: 1.6em;
+        padding-right: 16px;
+    }
+
+    .item1.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 68px;
+        left: 0;
+        right: 0;
+        width: 102%;
+        margin-left: -2px;
+        background-color: rgb(31, 31, 31);
+        color: #f0f0f0;
+    }
+
+    .item1 li {
+        margin: 5px auto;
+    }
+
+    .login.active {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        top: 244px;
+        background-color: rgb(31, 31, 31);
+        width: 102%;
+        margin-left: -2px;
+        margin-top: 0;
+        padding: 17px;
+        box-shadow: 1px 13px 11px 2px rgba(0, 0, 0, 0.849);
+    }
+
+    .login .loginbtn {
+        margin: 7.5px auto;
+    }
+
+    .login .registerbtn {
+        margin: 7.5px auto;
+    }
+
+    .lastgrid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "followus1 followus1" "cate1 quick1";
+    }
+
+    .followus {
+        margin: auto;
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 665px) {
+    .container1 {
+        height: 420px;
+    }
+
+    .mainpg {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 20px;
+    }
+
+    .img1,
+    .img2,
+    .img3 {
+        margin: auto;
+        width: 65%;
+    }
+    .giga{
+        margin-top: 42px;
+    }
+    .mainpg3{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: "reserveg" "booktableg";
+    }
+    .booktable{
+        margin: auto;
+    }
+    .reserve{
+        margin-bottom: 30px;
+    }
+    .lastgrid{
+        margin-top: 70px;
+    }
+}
+@media screen and (max-width: 470px) {
+    .heading h1{
+        font-size: 1.5em;
+    }
+    .heading p{
+        font-size: 0.8em;
+        margin-top: 0px;
+    }
+    .alpha h1{
+        font-size: 1.9em;
+    }
+    .giga h1{
+        font-size: 2em;
+    }
+    .container-fluid h3{
+        font-size: 1rem;
+    }
+    .container-fluid h4{
+        font-size: 0.8rem;
+    }
+    .img1, .img2, .img3{
+        width: 76%;
+    }
+    .order h3{
+        font-size: 1em;
+    }
+    .order h1{
+        font-size: 1.1em;
+    }
+    .order button{
+        width: 107px;
+        font-size: 0.8em;
+        margin-top: 13px;
+    }
+    .order{
+        height: 250px;
+    }
+    .followus img{
+        height: 138px;
+        width: 140px;
+    }
+    .followus h4{
+        font-size: 0.8em;
+    }
+    .cate h4{
+        font-size: 0.999em;
+    }
+    .quick h4{
+        font-size: 0.999em;
+    }
+    .cate ul li{
+        font-size: 0.8em;
+    }
+    .quick ul li{
+        font-size: 0.8em;
+    }
+    .copy p{
+        font-size: 0.8em;
+    }
+    .copy{
+        height: 42px;
+    }
+    .followus input{
+        height: 34px;
+        font-size: 0.8em;
+    }
+    .followus a{
+     padding: 2.5px;
+    }
+    .reserve h2{
+        font-size: 1.3555em;
+    }
+    .reserve p{
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 398px) {
+    .logo img{
+        height: 49px;
+        width: 58px;
+    }
+    .bars{
+        font-size: 1.3em;
+    }
+    .heading{
+        margin-top: 58px;
+    }
+    .item1.active{
+        top: 57px;
+    }
+    .login.active {
+        top: 226px;
+    }
+    .order{
+        height: 223px;
+    }
+    .container1{
+        height: 390px;
+    }
+    .login .registerbtn{
+        font-size: 0.888em;
+    }
+    .item1 li a{
+        font-size: 0.9em;
+    }
+}
+
+
+@media screen and (max-width: 380px) {
+    .lastgrid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: "cate1" "quick1" "followus1";
+    }
+    .followus input{
+        width: 207px;
+        margin-left: 71px;
+    }
+    .followus a{
+        bottom: 0;
+    
+    }
+    .followus img{
+        height: 128px;
+        width: 130px;
+    }
+}
+@media screen and (max-width: 348px){
+     .followus input{
+        width: auto;
+        margin-left: auto;
+    }
+}
+@media screen and (max-width: 300px){
+    body{
+        overflow: hidden;
+    }
+}

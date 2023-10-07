@@ -1,0 +1,19 @@
+@media screen and (max-width: 850) {
+    .login {
+        margin: 9px;
+        margin-top: 17px;
+    }
+    .login .loginbtn {
+        font-size: 1em;
+        border: 0px solid black;
+        border-radius: 4px;
+        height: 27px;
+        width: 75px;
+        letter-spacing: 1.1px;
+        padding: 2px;
+        margin-right: 3px;
+        cursor: pointer;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+    
+}
