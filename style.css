@@ -16,11 +16,11 @@ body {
     margin-top: 0;
     padding: 0;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(47, 46, 46, 0.746)), url(/bg1.jpg) no-repeat center center/cover;
-    z-index: -1;
     animation-name: animate1;
     animation-duration: 8s;
-    animation-timing-function: linear;
+    animation-timing-function: ease;
     animation-iteration-count: infinite;
+    animation-delay: 1s;
     transition: all 0.3s ease;
     height: 550px;
 }
@@ -746,128 +746,166 @@ hr {
         margin: auto;
         width: 65%;
     }
-    .giga{
+
+    .giga {
         margin-top: 42px;
     }
-    .mainpg3{
+
+    .mainpg3 {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-template-areas: "reserveg" "booktableg";
     }
-    .booktable{
+
+    .booktable {
         margin: auto;
     }
-    .reserve{
+
+    .reserve {
         margin-bottom: 30px;
     }
-    .lastgrid{
+
+    .lastgrid {
         margin-top: 70px;
     }
 }
+
 @media screen and (max-width: 470px) {
-    .heading h1{
+    .heading h1 {
         font-size: 1.5em;
     }
-    .heading p{
+
+    .heading p {
         font-size: 0.8em;
         margin-top: 0px;
     }
-    .alpha h1{
+
+    .alpha h1 {
         font-size: 1.9em;
     }
-    .giga h1{
+
+    .giga h1 {
         font-size: 2em;
     }
-    .container-fluid h3{
+
+    .container-fluid h3 {
         font-size: 1rem;
     }
-    .container-fluid h4{
+
+    .container-fluid h4 {
         font-size: 0.8rem;
     }
-    .img1, .img2, .img3{
+
+    .img1,
+    .img2,
+    .img3 {
         width: 76%;
     }
-    .order h3{
+
+    .order h3 {
         font-size: 1em;
     }
-    .order h1{
+
+    .order h1 {
         font-size: 1.1em;
     }
-    .order button{
+
+    .order button {
         width: 107px;
         font-size: 0.8em;
         margin-top: 13px;
     }
-    .order{
+
+    .order {
         height: 250px;
     }
-    .followus img{
+
+    .followus img {
         height: 138px;
         width: 140px;
     }
-    .followus h4{
+
+    .followus h4 {
         font-size: 0.8em;
     }
-    .cate h4{
+
+    .cate h4 {
         font-size: 0.999em;
     }
-    .quick h4{
+
+    .quick h4 {
         font-size: 0.999em;
     }
-    .cate ul li{
+
+    .cate ul li {
         font-size: 0.8em;
     }
-    .quick ul li{
+
+    .quick ul li {
         font-size: 0.8em;
     }
-    .copy p{
+
+    .copy p {
         font-size: 0.8em;
     }
-    .copy{
+
+    .copy {
         height: 42px;
     }
-    .followus input{
+
+    .followus input {
         height: 34px;
         font-size: 0.8em;
     }
-    .followus a{
-     padding: 2.5px;
+
+    .followus a {
+        padding: 2.5px;
     }
-    .reserve h2{
+
+    .reserve h2 {
         font-size: 1.3555em;
     }
-    .reserve p{
+
+    .reserve p {
         font-size: 0.8em;
     }
 }
 
 @media screen and (max-width: 398px) {
-    .logo img{
+    .logo img {
         height: 49px;
         width: 58px;
     }
-    .bars{
+
+    .bars {
         font-size: 1.3em;
     }
-    .heading{
+
+    .heading {
         margin-top: 58px;
     }
-    .item1.active{
+
+    .item1.active {
         top: 57px;
     }
+
     .login.active {
         top: 226px;
     }
-    .order{
+
+    .order {
         height: 223px;
     }
-    .container1{
+
+    .container1 {
         height: 390px;
     }
-    .login .registerbtn{
+
+    .login .registerbtn {
         font-size: 0.888em;
     }
-    .item1 li a{
+
+    .item1 li a {
         font-size: 0.9em;
     }
 }
@@ -879,27 +917,32 @@ hr {
         grid-template-columns: repeat(1, 1fr);
         grid-template-areas: "cate1" "quick1" "followus1";
     }
-    .followus input{
+
+    .followus input {
         width: 207px;
         margin-left: 71px;
     }
-    .followus a{
+
+    .followus a {
         bottom: 0;
-    
+
     }
-    .followus img{
+
+    .followus img {
         height: 128px;
         width: 130px;
     }
 }
-@media screen and (max-width: 348px){
-     .followus input{
+
+@media screen and (max-width: 348px) {
+    .followus input {
         width: auto;
         margin-left: auto;
     }
 }
-@media screen and (max-width: 300px){
-    body{
+
+@media screen and (max-width: 300px) {
+    body {
         overflow: hidden;
     }
 }
